@@ -1,0 +1,4 @@
+<div  class="gap-2 d-flex flex-wrap justify-content-center mt-4 " style="max-width: 956px;">
+    <app-work-image data-aos="fade-up" *ngFor="let item of displayedArray" [image]="item"></app-work-image>
+    <button *ngIf="displayedArray.length !== branding.length" (click)="loadMore()" class="btn btn-danger rounded-1 mt-3 ">Load more</button>
+</div>

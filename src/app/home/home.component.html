@@ -1,0 +1,117 @@
+<section>
+    <div class="position-relative img-container pb-4 ">
+        <app-navbar></app-navbar>
+        <div
+            class="d-flex align-items-center justify-content-center flex-column text-white  text-center container " 
+            style="height: 100vh;"
+            >
+            <h1 class="display-3 fw-bold">Brand Building Made Easy</h1>
+            <h1 class="display-1 fw-semibold" style="color:  #f6c920;">With Business Logo Design</h1>
+            <p class="">Convert your product into a brand today to outsmart your competition and stay relevant in
+                the market!
+                Business logo design is your trusted partner for complete and comprehensive digital solutions. We help
+                you in building a solid and sustainable brand that makes you stand out from competition.</p>
+            <button data-toggle="modal" data-target="#exampleModal"  class="btn btn-danger round-0">GET STARTED</button>
+        </div>
+        <div class="position-absolute top-0 h-100 w-100" style="z-index: -1;">
+            <video style="object-fit: cover; width: 100%; height: 100%;" [autoplay]="true" [loop]="true" [muted]="true">
+                <source src="assets/home-banner.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+   
+    <div class="d-flex  mt-5 flex-column align-items-center ">
+        <div class="text-center d-flex container flex-column align-items-center ">
+            <h1 class="fw-bolder w-75  ">Brand Creation made Simpler Your Gateway to Digital Success</h1>
+            <p class="text-secondary w-75 ">Your digital presence today is what you need to preserve to survive in
+                today’s
+                world – and we are experts in that. We help you from A to Z by helping you build your brand name to your
+                complete brand creation to pave your own success path.</p>
+        </div>
+        <div  class="gap-2 d-flex flex-wrap justify-content-center mt-4 " style="max-width: 956px;">
+            <app-work-image data-aos="fade-down-right" *ngFor="let item of displayedArray" [image]="item"></app-work-image>
+        </div>
+        <button *ngIf="displayedArray.length !== imageArray.length" (click)="loadMore()" class="btn btn-danger rounded-1 mt-3 ">Load more</button>
+    </div>
+    <div>
+       <app-price-card></app-price-card>
+    </div>
+    <div class="img-container2 py-3 ">
+        <div class="container d-flex justify-content-center gap-2 ">
+            <div class="row mt-4 d-flex align-items-center ">
+                <div class="col-lg-8 col-md-7">
+                    <h1>Let’s Build your Brand Together with Premium Digital Creation Services</h1>
+                    <p>If you’re looking to build a brand from scratch or aiming to rejuvenate an already created brand,
+                        you’ve come to the right place. Whether you are looking for custom logo design, mobile app
+                        development, or any other digital service in USA or anywhere in the world, at Business Logo
+                        Design, we handle your brand like our own. Our combo package helps you to kickstart or
+                        revitalize your business. Our expert team of brand analysts enable you to cater all your needs
+                        keeping you on board at all stages.</p>
+                    <button data-toggle="modal" data-target="#exampleModal" class="btn btn-danger d-none d-lg-block d-md-block d-sm-none ">GET STARTED</button>
+                </div>
+                <div class="col-lg-3 col-md-5">
+                    <div class="card card1 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Basic</h5>
+                            <small class='text-muted'>Individual</small>
+                            <br><br>
+                            <span class="h2">$8</span>/month
+                            <br><br>
+                            <div class="d-grid my-3">
+                                <button class="btn btn-outline-dark btn-block">Select</button>
+                            </div>
+                            <ul>
+                                <li>Cras justo odio</li>
+                                <li>Dapibus ac facilisis in</li>
+                                <li>Vestibulum at eros</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-5">
+        <app-solution></app-solution>
+    </div>
+    <div class="mt-5"  style="background-color: rgb(240, 240, 240);">
+        <app-satisfied></app-satisfied>
+    </div>
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content ">
+            <div class="p-3 d-flex justify-content-between align-items-start ">
+                <div>
+                    <h3 class="fw-bold text-danger  ">We are here to help!</h3>
+                    <p class="text-secondary ">Providing you the perfect solution for your business needs. Let's work together and unlock doors to success.</p>
+                </div>
+                <div style="cursor: pointer;">
+                    <img width="30" height="30" src="assets/close.png"  data-dismiss="modal" aria-label="Close" > 
+                </div>
+             
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group mb-3">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="email" class="form-control" placeholder="Email Address">
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="text" class="form-control" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group mb-3">
+                        <textarea rows="4" class="form-control" placeholder="Tell us about your project"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Submit</button>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>

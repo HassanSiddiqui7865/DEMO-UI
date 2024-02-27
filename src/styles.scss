@@ -1,1 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+html,
+body {
+    font-family: "Lato", sans-serif;
+}
+.pricing1 {
+    font-family: "Montserrat", sans-serif;
+    color: #8d97ad;
+    font-weight: 300;
+  }
+  
+  .pricing1 h1,
+  .pricing1 h2,
+  .pricing1 h3,
+  .pricing1 h4,
+  .pricing1 h5,
+  .pricing1 h6 {
+    color: #3e4555;
+  }
+  
+  .pricing1 .font-weight-medium {
+    font-weight: 500;
+  }
+  
+  .pricing1 .bg-light {
+    background-color: #FFFF !important;
+  }
+  .pricing1 .subtitle {
+    color: #8d97ad;
+    line-height: 24px;
+    font-size: 14px;
+  }
+  
+  .pricing1 .font-14 {
+    font-size: 14px;
+  }
+  
+  .pricing1 h5 {
+      line-height: 22px;
+      font-size: 18px;
+  }
+  
+  .pricing1 .card.card-shadow {
+    -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+    box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+  }
+  
+  .pricing1 .on-hover {
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+  }
+  
+  .pricing1 .on-hover:hover {
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    border: 3px solid red;
+    -webkit-transform: scale(1.05);
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  
+  .pricing1 .btn-md {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+  .pricing1 .price-badge {
+    top: -13px;
+    left: 0;
+    right: 0;
+    width: 100px;
+    margin: 0 auto;
+  }
+  
+  .pricing1 .badge-inverse {
+    background-color: #3e4555;
+  }
+  
+  .pricing1 .display-5 {
+    font-size: 3rem;
+    color:#dc3545;
+    font-weight: 900;
+  }
+  
+  .pricing1 .pricing sup {
+    font-size: 18px;
+    top: -20px;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

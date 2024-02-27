@@ -1,0 +1,38 @@
+<section>
+    <div  class="img-container pb-4 ">
+        <app-navbar></app-navbar>
+        <div
+            class="d-flex align-items-center justify-content-center flex-column text-white  text-center container"
+            style="min-height: 50vh;"
+            >
+            <h1 class="display-2 fw-bolder">Helping Thousands of Clients Realize their True Potential</h1>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center mt-5 flex-wrap container ">
+        <button (click)="handleSelect('logo')" type="button" class="btn btn-outline-danger border-danger border-3 rounded-1"
+          [ngClass]="{'active text-white': selected === 'logo'}">LOGO DESIGN</button>
+        <button (click)="handleSelect('web')" type="button" class="btn btn-outline-danger border-danger border-3 rounded-1"
+          [ngClass]="{'active text-white': selected === 'web'}">WEB DESIGN</button>
+        <button (click)="handleSelect('motion')" type="button"
+          class="btn btn-outline-danger border-danger border-3 rounded-1"
+          [ngClass]="{'active text-white': selected === 'motion'}">MOTION GRAPHICS</button>
+        <button (click)="handleSelect('branding')" type="button"
+          class="btn btn-outline-danger border-danger border-3 rounded-1"
+          [ngClass]="{'active text-white': selected === 'branding'}">BRANDING</button>
+        <button (click)="handleSelect('illustration')" type="button"
+          class="btn btn-outline-danger border-danger border-3 rounded-1"
+          [ngClass]="{'active text-white': selected === 'illustration'}">ILLUSTRATION</button>
+        <button (click)="handleSelect('apps')" type="button"
+          class="btn btn-outline-danger border-danger border-3 rounded-1"
+          [ngClass]="{'active text-white': selected === 'apps'}">MOBILE APPS</button>
+      </div>
+      
+      <div class="d-flex justify-content-center ">
+        <app-logodesigns *ngIf="selected === 'logo'"></app-logodesigns>
+        <app-web *ngIf="selected === 'web'"></app-web>
+        <app-motion *ngIf="selected ==='motion'"></app-motion>
+        <app-branding *ngIf="selected === 'branding'"></app-branding>
+        <app-illustration *ngIf="selected === 'illustration'"></app-illustration>
+        <app-mobileapps *ngIf="selected === 'apps'"></app-mobileapps>
+      </div>
+</section>
